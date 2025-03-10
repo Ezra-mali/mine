@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Information</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Country Information</h1>
+    </header>
+
+    <section>
+      <form id="country-form">
+        <label for="country-input">Enter a country:</label>
+        <input type="text" id="country-input" required />
+        <button type="submit">Get Country Info</button>
+      </form>
+    </section>
+
+    <section id="country-info">
+      <h2 id="country-name"></h2>
+      <p><strong>Capital:</strong> <span id="capital"></span></p>
+      <p><strong>Population:</strong> <span id="population"></span></p>
+      <p><strong>Region:</strong> <span id="region"></span></p>
+      <img id="flag" alt="Country Flag" />
+    </section>
+
+    <aside id="bordering-countries">
+      <h3>Bordering Countries</h3>
+      <ul id="borders-list"></ul>
+    </aside>
+
+    <footer>
+      <p>Powered by REST Countries API</p>
+    </footer>
+  </body>
+</html>
